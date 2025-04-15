@@ -1,0 +1,133 @@
+
+@import url("./tamanhos.css");
+
+
+.modal{
+    display: flex;
+    flex-wrap: wrap;
+    position: fixed;
+    width: 90%;
+    max-width: 1440px;
+    max-height: 1200px;
+    background-color: rgba(0,0,0,0.9);
+    z-index: 5;
+    margin: 10px auto;
+    margin-left: 5%;
+    padding: 20px;
+    overflow-y: scroll;
+}
+
+
+.modal .fechar-modal{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 50px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: rgb(217, 237, 0);
+}
+
+.modal .filme{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: blue;
+    margin-top: 20px;
+    width: 100%;
+    height: 95%;
+    padding: 20px;
+}
+
+.modal .filme img{
+    width: 50%;
+    max-width: 400px;
+    height: 80%;
+    max-height: 500px;
+    background-size: cover;
+    box-shadow: -5px 0px 10px 5px rgb(217, 237, 0);
+}
+
+
+.modal p{
+    color: white;
+    width: 45%;
+    max-height: 500px;
+    max-width: 800px;
+    min-width: 200px;
+    margin-left: 30px;
+}
+.modal .btn-play{
+    position: relative;
+    width: 50%;
+    max-width: 500px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: rgb(217, 237, 0);
+    margin-top: 20px;
+}
+
+.btn-play, .fechar-modal{
+    cursor: pointer;
+    border: none;
+}
+.fechar-modal:active{
+    background-color: rgb(168, 183, 0);
+}
+
+.btn-play:active{
+    background-color: rgb(168, 183, 0);
+}
+
+
+
+@media  screen and (max-width: 768px) {
+    .modal .filme{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .modal img{
+        width: 90%;
+        max-width: 300px;
+        height: 250px;
+    }
+
+    .modal .filme p{
+        width: 100%;
+        height: 50%;
+        max-height: 400px;
+        font-size: 12pt;
+        margin: 10px auto;
+        margin-top: 15px;
+        overflow-y: scroll;
+    }
+    .modal .btn-play{
+        margin-top: 10px;
+    }
+
+}
+
+
+@media  screen and (max-width: 400px) {
+    .modal .filme{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .modal img{
+        width: 100%;
+        max-width: 250px;
+        height: 270px;
+    }
+
+    .modal .filme p{
+        width: 100%;
+        height: 180px;
+        font-size: 12pt;
+        margin: 10px auto;
+        overflow-y: scroll;
+    }
+    .modal .btn-play{
+        margin-top: 10px;
+    }
+}

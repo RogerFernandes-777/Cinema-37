@@ -1,0 +1,19 @@
+
+@import url("./tamanhos.css");
+
+.catalog{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 50px auto;
+    justify-content: space-between;
+    width: 80%;
+    max-width: 1440px;
+    min-height: 300px;
+    max-height: 800px;
+    overflow-y: scroll;
+    background-color: rgb(28,1,244);
+    border-radius: 20px;
+    padding: 20px;
+    gap: 10px;
+}
+
