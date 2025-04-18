@@ -13,7 +13,7 @@ const Card = (props)=>{
         <div className="card">
             
             <img src={props.img} alt='imagem do filme'/>
-            <button onClick={()=>(setIsVisible(true), setValue(props.img))}>assistir</button>
+            <button onClick={()=>{setIsVisible(true); setValue(props.img)}}>assistir</button>
         </div>
     );
 }

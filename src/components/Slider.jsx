@@ -4,7 +4,7 @@ import {Swiper, SwiperSlide} from "swiper/react";
 import { useState, useEffect, } from "react";
 import Card from "./Card";
 
-const Slider = (props)=>{
+const Slider = ({fotos})=>{
  
 
    
@@ -48,7 +48,7 @@ const Slider = (props)=>{
             pagination={{clickable: true}}
             navigation
             >
-                {props.fotos.map( (item) => (
+                {fotos.map( (item) => (
                     <SwiperSlide key={item.id}>
                         <Card img={item.image} />
                     </SwiperSlide>

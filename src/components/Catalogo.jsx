@@ -7,7 +7,7 @@ const Catalogo = (props)=>{
   
 
     return(
-        <div className="catalog">
+        <div className="catalog"> 
             {
                 props.fotos.map((item)=>{
                     return(

@@ -2,7 +2,7 @@ import { createContext } from "react";
 
 
 export const FilmeContext = createContext(); 
-
+ 
  
 const FilmeProvider = ({children})=>{
 

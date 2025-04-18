@@ -2,13 +2,13 @@
 import './App.css';
 import Header from './components/Header';
 import Banner from './components/Banner';
-import Catalogo from './components/Catalogo';
+import Catalogo from './components/Catalogo'; 
 import Modal from './components/Modal';
 import { useContext } from 'react';
 import { ModalContext } from './assets/context/ModalContext';
 import FilmeProvider from './assets/context/FilmeContext';
 
-function App() {
+function App() { 
 
   const {isVisible} = useContext(ModalContext); 
 
@@ -25,7 +25,7 @@ function App() {
 
 
     
-  return ( 
+  return (  
     <div className="App">
       {
         isVisible? <Modal/>: <p></p>

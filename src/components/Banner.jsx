@@ -11,12 +11,12 @@ register();
 
  
 
-const Banner = (props)=>{
+const Banner = ({fotos})=>{ 
 
     return(
         <div className="banner">
             <h1 className="tituloBanner">lançamentos</h1>
-            <Slider fotos={props.fotos}/>
+            <Slider fotos={fotos}/>
         </div>
     );
 }

@@ -3,7 +3,7 @@ import "../assets/css/modal.css";
 import { ModalContext} from "../assets/context/ModalContext";
 import { useContext } from "react";
 
-const Modal = ()=>{ 
+const Modal = ()=>{   
  
     const { setIsVisible, value} = useContext(ModalContext);
 
