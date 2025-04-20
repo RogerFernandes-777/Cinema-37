@@ -1,7 +1,7 @@
 
 @import url('./tamanhos.css');
 
-
+ 
 .header{
     display: flex;
     width: 100%;
@@ -42,10 +42,10 @@
 
 .header .buscar button{
     background-color: rgb(28, 143, 244);
-    width: 10%;
-    height: 20px;
+    width: 1.5rem;
+    height: 1.5rem;
     border: none;
-    border-radius: 10px;
+    border-radius: 50%;
     margin-left: 5px;
 }
 
@@ -63,9 +63,9 @@
 
 .header .perfil{
     display: flex;
-    width: var(--w10);
+    width: 2.5rem;
     max-width: 50px;
-    height: 35px;
+    height: 2.5rem;
     max-height: 50px;
     border-radius: 50px;
     background-color: rgb(217, 237, 0);

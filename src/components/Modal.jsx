@@ -3,6 +3,8 @@ import "../assets/css/modal.css";
 import { ModalContext} from "../assets/context/ModalContext";
 import { useContext } from "react";
 
+import { FaTimes } from "react-icons/fa";
+
 const Modal = ()=>{   
  
     const { setIsVisible, value} = useContext(ModalContext);
@@ -11,7 +13,7 @@ const Modal = ()=>{
     return(
         <div className="modal">
 
-            <button className="fechar-modal" onClick={()=>setIsVisible(false)}>fechar modal</button>
+            <button className="fechar-modal" onClick={()=>setIsVisible(false)}><FaTimes className="close"/></button>
             <div className="filme">
                 <img src={value} alt="imagem do filme" />
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.

@@ -4,6 +4,7 @@ import Header from './components/Header';
 import Banner from './components/Banner';
 import Catalogo from './components/Catalogo'; 
 import Modal from './components/Modal';
+import Footer from './components/Footer';
 import { useContext } from 'react';
 import { ModalContext } from './assets/context/ModalContext';
 import FilmeProvider from './assets/context/FilmeContext';
@@ -37,6 +38,7 @@ function App() {
       <Banner fotos={fotos}/>
       <h2>para você curtir</h2>
       <Catalogo fotos={fotos}/>
+      <Footer/>
     </div>
   );
 }

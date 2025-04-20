@@ -23,10 +23,14 @@
     position: absolute;
     top: 5px;
     right: 5px;
-    width: 50px;
+    width: 30px;
     height: 30px;
     border-radius: 10px;
     background-color: rgb(217, 237, 0);
+}
+
+.modal .close{
+    font-size: 1.5rem;
 }
 
 .modal .filme{
