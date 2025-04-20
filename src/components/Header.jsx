@@ -5,6 +5,8 @@ import { useContext, useState } from 'react';
 import Modal from "./Modal"
 import { ModalContext } from '../assets/context/ModalContext';
 
+import { FaUser, FaSistrix } from "react-icons/fa"
+
   
 const Header = ()=>{
 
@@ -19,11 +21,18 @@ const Header = ()=>{
     function pesquisar(item, lugar){
 
         for (let index = 0; index < lugar.length; index++) {
-            if(lugar[index].nome === item){
+
+            if(filme === ''){
+                return;
+            }
+            else if(lugar[index].nome === item){
                 setValue(lugar[index].image);
                 setIsVisible(true);
                 
                 return <Modal/>;
+
+            } else if(index === lugar.length -1){
+                alert(`não temos o filme ${filme} no nosso catalogo`);
             }
         }
     }
@@ -33,9 +42,9 @@ const Header = ()=>{
             <h1>cinema37</h1>
             <div className='buscar'>
                 <input type="search" id='filme' placeholder='nome de filme/série' onChange={(e)=> setFilme(e.target.value)}/>
-                <button onClick={()=>pesquisar(filme, fotos)}></button>
+                <button onClick={()=>pesquisar(filme, fotos)}><FaSistrix className='pesquisa'/></button>
             </div>
-            <span className="perfil"></span>
+            <span className="perfil"><FaUser className='user'/></span>
         </header>
     );
 }

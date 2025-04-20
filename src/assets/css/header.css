@@ -49,6 +49,10 @@
     margin-left: 5px;
 }
 
+.header .buscar .pesquisa{
+    font-size: 1rem;
+}
+
 .header .buscar button:hover{
     cursor: pointer;
 }
@@ -58,14 +62,21 @@
 }
 
 .header .perfil{
+    display: flex;
     width: var(--w10);
     max-width: 50px;
     height: 35px;
     max-height: 50px;
     border-radius: 50px;
     background-color: rgb(217, 237, 0);
+    align-items: center;
+    justify-content: center;
 }
 
+.header .perfil .user{
+    color: rgb(20,7,111);
+    font-size: 1.5rem;
+}
 .header .perfil:hover{
     cursor: pointer; 
 }
