@@ -1,3 +1,5 @@
+@import url('cores.css');
+
 
 *{
     margin: 0;
@@ -13,16 +15,16 @@
     height: 80px;
     max-height: 150px;
     padding: 10px;
-    border-top: 2px solid rgb(28,143,244);
+    border-top: 2px solid var(--color30);
 }
 
 .footer .info, .redes-sociais{
     width: 49%;
     height: 60px;
-    background-color: rgb(28,143,244);
+    background-color: var(--color30);
     text-align: center;
     border-radius: 10px;
-    color: rgb;
+    color: black;
 }
 
 .footer .info, h5{

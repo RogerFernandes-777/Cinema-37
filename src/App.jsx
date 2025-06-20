@@ -9,6 +9,7 @@ import { useContext } from 'react';
 import { ModalContext } from './assets/context/ModalContext';
 import FilmeProvider from './assets/context/FilmeContext';
 
+
 function App() { 
 
   const {isVisible} = useContext(ModalContext); 
@@ -31,6 +32,8 @@ function App() {
       {
         isVisible? <Modal/>: <p></p>
       }
+
+     
       <FilmeProvider>
         <Header/>
       </FilmeProvider>

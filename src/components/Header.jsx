@@ -6,6 +6,7 @@ import Modal from "./Modal"
 import { ModalContext } from '../assets/context/ModalContext';
 
 import { FaUser, FaSistrix } from "react-icons/fa"
+import { Link } from 'react-router-dom';
 
   
 const Header = ()=>{
@@ -39,12 +40,14 @@ const Header = ()=>{
 
     return(
         <header className="header">
+            
             <h1>cinema37</h1>
             <div className='buscar'>
                 <input type="search" id='filme' placeholder='nome de filme/série' onChange={(e)=> setFilme(e.target.value)}/>
                 <button onClick={()=>pesquisar(filme, fotos)}><FaSistrix className='pesquisa'/></button>
             </div>
-            <span className="perfil"><FaUser className='user'/></span>
+            <Link to={'/components/profile'}><span className="perfil"><FaUser className='user'/></span></Link>
+            
         </header>
     );
 }

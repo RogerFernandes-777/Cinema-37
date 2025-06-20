@@ -1,8 +1,11 @@
+@import url('cores.css');
+
+
 .card{
     margin: 0 auto;
     width: 200px;
     height: 250px;
-    background-color: rgb(217, 237, 0);
+    background-color: var(--color10);
 } 
 
 .card img{
@@ -17,7 +20,7 @@
     position: relative;
     width: 100px;
     height: 30px;
-    background-color: rgb(217, 237, 0);
+    background-color: var(--color10);
     border-radius: 20px;
     border: 1px solid blue;
     border-bottom-color: red;
@@ -32,5 +35,5 @@
 }
 
 .card button:active{
-    background-color: rgb(163, 178, 0);
+    background-color: var(--colorAuxBtn);
 }

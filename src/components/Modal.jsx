@@ -6,7 +6,7 @@ import { useContext } from "react";
 import { FaTimes } from "react-icons/fa";
 
 const Modal = ()=>{   
- 
+  
     const { setIsVisible, value} = useContext(ModalContext);
 
     

@@ -1,4 +1,5 @@
 @import url('./tamanhos.css');
+@import url('cores.css');
 
 
 .banner{
@@ -8,7 +9,7 @@
     width: 90%;
     max-width: 1440px;
     height: 400px;
-    background-color: rgb(28,143,244);
+    background-color: var(--color30);
     border-radius: 10px;
     margin: 10px auto;
 }
@@ -18,6 +19,6 @@
     text-transform: capitalize;
     width: 100%;
     text-align: center;
-    color: rgb(217, 237, 0);
+    color: var(--color10);
     margin-top: 10px;
 }

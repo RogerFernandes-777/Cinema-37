@@ -1,0 +1,11 @@
+
+
+:root{
+    --color60:  rgb(7, 1, 49);
+    --color30: rgb(28, 143, 244);
+    --color10: rgb(217, 237, 0);
+    --colorInput: rgb(255,255,255);
+    --colorBackgroundModal: rgba(0,0,0,0.9);
+    --colorBackgroundModalAux:  rgb(0, 0, 255);
+    --colorAuxBtn:  rgb(168, 183, 0);
+}
